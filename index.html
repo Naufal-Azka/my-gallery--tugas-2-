@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ini Judul</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <section id="background">
+        <img src="GPXZxGvawAAwfpD.jpeg" alt="" />
+      </section>
+
+      <nav>
+        <ul class="nav-bar">
+          <li class="detail-navbar">Home</li>
+          <li class="detail-navbar">Gallery</li>
+          <li class="detail-navbar">About Me</li>
+          <li class="detail-navbar">Contact</li>
+        </ul>
+      </nav>
+
+      <div id="title">
+        <h1 id="judul">My Gallery</h1>
+      </div>
+
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <div class="container--card">
+            <img src="itukronologinyagimanamas.jpg" alt="" />
+
+            <div class="card--text">
+              <h2>Placeholder</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                velit reprehenderit dolorum, facere fuga saepe quidem veniam
+                officia exercitationem fugit ipsa facilis quam laudantium
+                inventore tempora natus totam! Consequatur, totam.
+              </p>
+            </div>
+          </div>
+
+          <div class="container--card">
+            <img src="IMG_20240212_053054.jpg" alt="" />
+
+            <div class="card--text">
+              <h2>Placeholder</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                velit reprehenderit dolorum, facere fuga saepe quidem veniam
+                officia exercitationem fugit ipsa facilis quam laudantium
+                inventore tempora natus totam! Consequatur, totam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="komentar">
+        <div class="container">
+          <div class="container--text">
+            <h2>Comments</h2>
+          </div>
+          <div>
+            <form action="" method="">
+              <div>
+                <label class="comment--text" for="name">Nama : </label>
+              </div>
+              <div>
+                <input type="text" name="nama" id="name" required />
+              </div>
+              <div>
+                <label class="comment--text" for="comment">Comment : </label>
+              </div>
+              <div>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button type="button" class="submit" onclick="addComment()">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="comments">
+        <div class="container">
+          <div class="container--text">
+            <h1>Comments</h1>
+          </div>
+          <div id="comment--list"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <h2>@Naufal Azka</h2>
+      </footer>
+    </div>
+
+    <script>
+      const eleBaru = document.createElement("h4");
+      eleBaru.textContent = "Ini Elemen JS";
+
+      const gallTitle = document.getElementById("title");
+      gallTitle.append(eleBaru);
+
+      function addComment() {
+        let name = document.getElementById("name").value;
+        let comment = document.getElementById("comment").value;
+        let section = document.getElementById("comment--list");
+
+        const div = document.createElement("div");
+
+        const commentList = document.getElementById("comment--list");
+        commentList.append(div);
+
+        const commentName = document.createElement("h2");
+        commentName.textContent = name;
+
+        const commentIsi = document.createElement("p");
+        commentIsi.textContent = comment;
+
+        div.append(commentName).value = "";
+        div.append(commentIsi).value = "";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

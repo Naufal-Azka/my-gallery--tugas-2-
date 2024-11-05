@@ -1,0 +1,14 @@
+Nama  : Naufal Azka Putra Difa
+Absen : 25
+Kelas : XI PPLG 1
+
+<---CARA MENAMBAH LIST KOMENTAR PADA WEBSITE--->
+1. Buatlah form dengan input "nama", "comment", & button submit
+2. Buatlah method "function addComment()" dibagian <script></script>
+3. Buatlah function/event OnClick seperti onclick="addComment()"
+4. Pada Method tersebut deklarasikan variabel untuk input "nama", & "comment" lalu pada variabel tersebut mengambil "value" dari form
+5. deklarasikan variable "div" dengan id:comment--list
+6. Buatlah element baru berupa "div"
+7. lalu wariskan elemen "div" baru ke variable "div"
+8. setelah itu Buatlah elemen "h2" & "p" dengan variabel "nama", & "comment"
+9. lalu wariskan elemen "h2" & "p" ke elemen "div"
